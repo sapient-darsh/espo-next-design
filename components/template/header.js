@@ -81,7 +81,7 @@ const Header = () => {
   return (
     <>
       <div className="font-bold font-slussen flex justify-between items-center h-[56px] md:h-[88px] border-t md:border-t-0 border-b border-dark">
-        <div className="flex justify-start items-center gap-x-10 pl-[30px]">
+        <div className="flex justify-start items-center gap-x-10 pl-[48px]">
           <Image
             priority
             width={130}

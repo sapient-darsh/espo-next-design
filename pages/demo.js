@@ -333,12 +333,12 @@ const Demo = () => {
       </div> */}
 
       {/* select dropdown with search */}
-      {/* <div className="m-4">
+      <div className="m-4">
         <Select onChange={() => console.log("first")} />
-      </div> */}
+      </div>
 
       {/* filter dropdown */}
-      {/* <div className="m-4">
+      <div className="m-4">
         <FilterDropDownGroup>
           <FilterDropDown label="Rating">
             <ul>
@@ -359,7 +359,7 @@ const Demo = () => {
             </ul>
           </FilterDropDown>
         </FilterDropDownGroup>
-      </div> */}
+      </div>
 
       {/* person card */}
       {/* <div className="m-4">
@@ -443,13 +443,13 @@ const Demo = () => {
       </div> */}
 
       {/* search box */}
-      {/* <div className="m-4">
+      <div className="m-4">
         <SearchBox
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           onClear={() => setSearch("")}
         />
-      </div> */}
+      </div>
 
       {/* talent card */}
       {/* <div className="m-4">
