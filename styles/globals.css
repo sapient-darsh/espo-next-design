@@ -1,0 +1,339 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Thin-TRIAL.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Thin-Italic-TRIAL.otf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Light-TRIAL.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Light-Italic-TRIAL.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Regular-TRIAL.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Regular-Italic-TRIAL.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Medium-TRIAL.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Medium-Italic-TRIAL.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Semibold-TRIAL.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen";
+  src: url("/assets/fonts/Slussen-Semibold-Italic-TRIAL.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Thin-TRIAL.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Thin-Italic-TRIAL.otf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Extralight-TRIAL.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Extralight-Italic-TRIAL.otf");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Light-TRIAL.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Light-Italic-TRIAL.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Regular-TRIAL.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Regular-Italic-TRIAL.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Medium-TRIAL.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Medium-Italic-TRIAL.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Semibold-TRIAL.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Semibold-Italic-TRIAL.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Bold-TRIAL.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Slussen Extended";
+  src: url("/assets/fonts/Slussen-Extended-Bold-Italic-TRIAL.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+input {
+  outline: none;
+  border: 1px solid black;
+}
+textarea {
+  outline: none;
+  border: 1px solid black;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+/* +++++++++++slider++++++++++++++++ */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.transition {
+  transition: all 0.5s ease;
+}
+
+.main-d:nth-last-child(1) {
+  border-bottom: none;
+}
+
+/* -------EventCardBanner----- */
+
+.hovercss:hover .d1 {
+  /* border-radius: 9px; */
+  border-color: #5a6dd8;
+}
+.hovercss:hover .btn {
+  background-color: #5a6dd815;
+}
+.hovercss:hover .mp {
+  color: #5a6dd8;
+}
+.hh {
+  display: none;
+}
+
+.navbarhover:hover svg path {
+  fill: #8390f5;
+}
+.navbarhover:hover .cir circle {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .hh {
+    display: block;
+  }
+
+  .datef {
+    border-top: 1px solid black;
+  }
+  .hb {
+    display: none;
+  }
+}
+
+/* Rotate arrow */
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+.open {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scroll-none {
+  -ms-overflow-style: none;
+  scrollbar-width: 1px;
+}
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+.hidden-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hidden-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.hidden-scroll::-webkit-scrollbar-thumb {
+  background: rgb(187, 185, 185);
+  border-radius: 15px;
+  height: 10px;
+}
+
+/* hide modal scroll */
+.hide-modal-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.hide-modal-scrollbars::-webkit-scrollbar {
+  width: 0.01rem; /* Adjust as needed */
+}
+
+.hide-modal-scrollbars::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
