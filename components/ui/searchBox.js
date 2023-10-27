@@ -28,7 +28,7 @@ const SearchBox = (props) => {
 
   return (
     <div className="relative font-slussen">
-      <div className="relative w-full cursor-default rounded-md flex  items-center bg-white h-[56px] pl-5 pr-4 py-4 text-left  shadow-sm ring-1  ring-dark active:ring-purple focus:ring-purple  sm:text-sm sm:leading-6">
+      <div className="relative w-full cursor-default rounded-md flex  items-center bg-white h-[48px] lg:h-[56px] pl-5 pr-4 py-4 text-left  shadow-sm ring-1  ring-dark active:ring-purple focus:ring-purple  sm:text-sm sm:leading-6">
         <SearchBold />
         <input
           type="text"

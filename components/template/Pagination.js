@@ -39,7 +39,7 @@ const Paginate = ({
 
   return (
     <div className="container mx-auto font-slussen">
-      <div className="flex justify-evenly items-center py-10 gap-5">
+      <div className="flex justify-between items-center py-10 gap-5">
         <div>
           <div
             className={`rounded-lg border border-dark p-1 sm:p-2 ${

@@ -67,9 +67,9 @@ const Select = () => {
         </button>
 
         {isOpen && (
-          <div className="absolute mt-[12px] z-10 bg-white w-full rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="absolute mt-[12px]  bg-white w-full rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
             <ul
-              className="absolute textarea mt-[6px] z-10 border  border-dark w-full overflow-auto rounded-md bg-white py-3 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+              className="absolute textarea mt-[6px] border  border-dark w-full overflow-auto rounded-md bg-white py-3 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
               role="listbox"
               aria-labelledby="listbox-label"
               tabIndex={-1}
@@ -91,7 +91,7 @@ const Select = () => {
                     return (
                       <li
                         key={option.id}
-                        className=" cursor-pointer text-dark text-left font-normal text-[16px] mx-3 h-[48px] rounded-md hover:bg-[#F5F6FE] select-none  p-[12px]"
+                        className=" cursor-pointer text-dark text-left font-normal text-[16px] mx-3 h-[48px] rounded-md bg-white hover:bg-[#F5F6FE] select-none  p-[12px]"
                         onClick={() => handleOptionClick(option)}
                       >
                         {option.name}

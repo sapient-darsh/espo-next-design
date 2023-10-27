@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CalendarStarBold = ({ color, hoverColor, ...rest }) => {
+const   CalendarStarBold = ({ color, hoverColor, ...rest }) => {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {

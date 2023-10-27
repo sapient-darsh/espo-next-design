@@ -4,7 +4,7 @@ import React from "react";
 const StickyFooter = () => {
   return (
     <>
-      <div className="bg-[black] px-[16px] py-[40px] md:py-[20px] md:px-[48px] hidden md:grid grid-cols-3 items-center">
+      <div className="bg-[black] px-[16px] py-[40px] md:py-[20px] md:px-[48px]  flex justify-between  items-center">
         <div className="text-[14px] text-[#FFFFFF55] text-left">
           © <span className="text-white">2023 ESPO</span>
         </div>

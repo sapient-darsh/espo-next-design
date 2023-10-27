@@ -81,7 +81,7 @@ const Header = () => {
   return (
     <>
       <div className="font-bold font-slussen flex justify-between items-center h-[56px] md:h-[88px] border-t md:border-t-0 border-b border-dark">
-        <div className="flex justify-start items-center gap-x-10 pl-[48px]">
+        <div className="flex justify-start items-center gap-x-10 pl-[16px] lg:pl-[48px]">
           <Image
             priority
             width={130}
@@ -201,7 +201,7 @@ const Header = () => {
       <div
         className={`${
           openDrawer ? "block" : "hidden "
-        } w-full z-10 top-0 right-0 h-screen transition-all absolute duration-4000 bg-white shadow-xl `}
+        } w-full z-50 top-0 right-0 h-screen transition-all absolute duration-4000 bg-white shadow-xl `}
       >
         <div className="md:hidden visible ">
           <div className="flex justify-between items-center border-t md:border-t-0 border-b border-dark">
@@ -223,7 +223,7 @@ const Header = () => {
               <CrossLinear color="#111" />
             </div>
           </div>
-          <div className="px-[16px] py-[48px]">
+          <div className="px-[16px] py-[48px] z-40 absolute">
             <div className="relative uppercase mb-[40px] text-[26px] font-slussenExtended font-bold">
               <Link href="/demo">DISCOVER</Link>
               {activeMenuItem === "/demo" && (
@@ -247,7 +247,7 @@ const Header = () => {
       {isUserDropdownOpen && (
         <div
           ref={userDropdownRef}
-          className="my-4 mx-8 font-slussen right-8 absolute z-10 border border-dark w-[320px] h-fit bg-white rounded-lg"
+          className="my-4 mx-8 font-slussen right-[-17px] z-50 absolute  border border-dark w-[320px] h-fit bg-white rounded-lg"
         >
           <div className="p-[24px]">
             <div className="flex items-center mb-4">
@@ -300,7 +300,7 @@ const Header = () => {
       {isNotificationDropdownOpen && (
         <div
           ref={notificationDropdownRef}
-          className="my-4 mx-8 font-slussen right-0 md:right-36 absolute z-10   border border-dark w-[300px] md:w-[480px] max-h-[560px]  bg-white rounded-lg overflow-scroll hide-modal-scrollbars"
+          className="my-4 mx-8 font-slussen right-0 md:right-36 absolute z-50   border border-dark w-[300px] md:w-[480px] max-h-[560px]  bg-white rounded-lg overflow-scroll hide-modal-scrollbars"
         >
           <div className="flex justify-between items-center px-[18px] py-[12px]">
             <span className="text-base font-bold text-dark">NOTIFICATIONS</span>
