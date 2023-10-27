@@ -154,6 +154,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              
               {/* cards */}
               <div className="w-full bg-white">
                 <div className="">
