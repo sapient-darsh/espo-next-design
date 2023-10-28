@@ -12,6 +12,7 @@ import IconButton from "@/components/ui/iconButton";
 import PlusLinear from "@/components/assets/svg/plusLinear";
 import Paginate from "@/components/template/Pagination";
 import StickyFooter from "@/components/template/stickyFooter";
+import Link from "next/link";
 
 const Home = () => {
   const information = ["Item 1", "Item 2", "Item 3", "Item 4"];
@@ -90,6 +91,11 @@ const Home = () => {
 
             {/* w-[884px] overflow-x-auto */}
             <div className="w-full ">
+
+              <Link href={"/premium"}>
+                <button>Premium</button>
+              </Link>
+              
               <div className="bg-white border sticky overflow-x-auto top-0 z-40">
                 {/* tabs */}
                 <div className="flex lg:pb-[40px] scroll-none gap-6 mt-[32px] overflow-x-auto bg-[white] hidden-scroll">
@@ -154,7 +160,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* cards */}
               <div className="w-full bg-white">
                 <div className="">

@@ -2,21 +2,21 @@ import React from "react";
 import MenuRow from "../ui/menuRow";
 import DocumentBold from "../assets/svg/documentBold";
 
-const Account2 = () => {
+const Account2 = (prop) => {
   return (
-    <div className="p-[50px]">
-      <div className=" border border-dark rounded-lg" >
-          <div className="border-b px-[24px] py-[24px] border-[black]">
-            <MenuRow>
-              <DocumentBold />
-              <span>My Job Postings</span>
-            </MenuRow>
-            <MenuRow>
-              <DocumentBold />
-              <span>My Events</span>
-            </MenuRow>
-          </div>
-        <div className=" px-[24px] py-[24px]">
+    <div className="">
+      <div className=" border border-dark rounded-lg">
+        <div className="border-b px-[24px] py-[24px] border-[black]">
+          <MenuRow>
+            <DocumentBold />
+            <span id={prop.id}>My Job Postings</span>
+          </MenuRow>
+          <MenuRow>
+            <DocumentBold />
+            <span>My Events</span>
+          </MenuRow>
+        </div>
+        <div className="px-[24px] py-[24px]">
           <MenuRow>
             <DocumentBold />
             <span>Settings</span>

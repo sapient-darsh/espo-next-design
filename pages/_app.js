@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
 import { useRouter } from "next/router";
 
+
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   const handleRouteChange = (url) => {
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className="font-slussenExtended">
       <Component {...pageProps} />
+      
     </main>
   );
 }
