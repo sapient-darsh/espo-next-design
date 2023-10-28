@@ -1,17 +1,22 @@
 import Account1 from "@/components/template/account1";
 import Account2 from "@/components/template/account2";
+import Button from "@/components/ui/button";
 
 import EventPostCard from "@/components/template/eventPostCard";
 import IconButton from "@/components/ui/iconButton";
 import PlusLinear from "@/components/assets/svg/plusLinear";
 import Input from "@/components/ui/input";
+import Switcher from "@/components/ui/switcher";
 
 import Header from "@/components/template/header";
 import JobPostCard from "@/components/template/jobPostCard";
-import React from "react";
+import React, { useState } from "react";
 
 const Account = () => {
   const jobpostId = "job";
+  const [switcher2, setSwitcher2] = useState(true);
+  const [switcher3, setSwitcher3] = useState(true);
+
   return (
     <div>
       <Header />
@@ -177,41 +182,88 @@ const Account = () => {
                       icon={<PlusLinear color="#111" />}
                     ></IconButton>
                   </div>
-
-                  <div className=" w-full flex mt-[24px] gap-[24px]">
-                    <div className="w-full">
-                      <Input
-                        label="First Name"
-                        className="border border-dark mt-[8px] "
-                        placeholder="First Name"
-                        size="large"
-                      />
+                  <div className="in-field mb-[48px]">
+                    <div className=" w-full flex mt-[24px] gap-[24px]">
+                      <div className="w-full">
+                        <Input
+                          label="First Name"
+                          className="border border-dark mt-[8px] "
+                          placeholder="First Name"
+                          size="large"
+                        />
+                      </div>
+                      <div className="w-full">
+                        <Input
+                          label="Last Name"
+                          className="border border-dark mt-[8px] "
+                          placeholder="Last Name"
+                          size="large"
+                        />
+                      </div>
                     </div>
-                    <div className="w-full">
-                      <Input
-                        label="Last Name"
-                        className="border border-dark mt-[8px] "
-                        placeholder="Last Name"
-                        size="large"
-                      />
+                    <div className=" w-full flex mt-[24px] gap-[24px]">
+                      <div className="w-full">
+                        <Input
+                          label="Email Address"
+                          className="border border-dark mt-[8px] "
+                          placeholder="companyname@mail.com"
+                          size="large"
+                        />
+                      </div>
+                      <div className="w-full">
+                        <Input
+                          label="Phone Number"
+                          className="border border-dark mt-[8px] "
+                          placeholder="+1-613-555-0157"
+                          size="large"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className=" w-full flex mt-[24px] gap-[24px]">
-                    <div className="w-full">
-                      <Input
-                        label="Email Address"
-                        className="border border-dark mt-[8px] "
-                        placeholder="companyname@mail.com"
-                        size="large"
+
+                  <div className="w-full">
+                    <p className="text-[#0E0D0D] text-[16px] font-bold pb-[16px] border-b border-[black]">
+                      Change Password
+                    </p>
+                    <button className=" w-full whitespace-nowrap mt-[24px]  mb-[48px] lg:w-[240px] h-[56px] border border-[#8390F5] rounded-[8px] text-[16px] text-[#0E0D0D] font-bold hover:text-[#8390F5]">
+                      CHANGE PASSWORD
+                    </button>
+                    <p className="text-[#0E0D0D] text-[16px] font-bold pb-[16px] border-b border-[black]">
+                      Notifications
+                    </p>
+                    <div className="flex justify-between items-center mt-[32px] pb-[32px] border-b border-[black]">
+                      <div className="">
+                        <p className="text-[24px] mb-[16px] font-bold">
+                          SYSTEM NOTIFICATIONS
+                        </p>
+                        <p className="text-[#0E0D0D] text-[16px] font-normal">
+                          Turn on or off all notifications about, favourites,
+                          reviews, and updates.{" "}
+                        </p>
+                      </div>
+                      <Switcher
+                        checked={switcher2}
+                        onChange={() => setSwitcher2(!switcher2)}
+                        variant="outlined"
                       />
                     </div>
-                    <div className="w-full">
-                      <Input
-                        label="Last Name"
-                        className="border border-dark mt-[8px] "
-                        placeholder="companyname@mail.com"
-                        size="large"
+                    <div className="flex justify-between items-center mt-[32px] pb-[32px] border-b border-[black]">
+                      <div className="">
+                        <p className="text-[24px] mb-[16px] font-bold">
+                          EMAIL NOTIFICATIONS
+                        </p>
+                        <p className="text-[#0E0D0D] text-[16px] font-normal">
+                          Turn on or off all marketing and promotional email
+                          notifications from ESPO{" "}
+                        </p>
+                      </div>
+
+                      <Switcher
+                        checked={switcher3}
+                        onChange={() => setSwitcher3(!switcher3)}
+                        variant="outlined"
                       />
+                      
                     </div>
                   </div>
                 </div>
