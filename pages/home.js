@@ -37,19 +37,19 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header  />
       <div className="">
         <div className=" px-[16px] lg:px-[48px]">
-          <div className="text-[#0E0D0D] text-[28px] lg:text-[48px] mt-[32px] lg:mt-[48px] font-black mb-[32px]">
+          <div className="text-[#0E0D0D] bg-[white] z-10 text-[28px] lg:text-[48px] sticky top-[56px] md:top-[88px]  pt-[32px] lg:pt-[48px] font-black  pb-[34px] lg:pb-[52px]">
             DISCOVER
           </div>
           <div className="flex mb-[32px] lg:flex-row flex-col  gap-[48px]">
             <div className="w-full lg:w-[320px] hidden  lg:block">
-              <div className=" w-full lg:w-[320px] mb-[32px] border-r  sticky top-[32px] z-50">
+              <div className=" w-full lg:w-[320px] mb-[32px] border-r  sticky top-[261px] z-50">
                 {" "}
                 <Select onChange={() => console.log("first")} />
               </div>
-              <div className="sticky z-10 top-[120px]">
+              <div className="sticky z-10 top-[352px]">
                 <div className="text-[black] w-full z-0 justify-between text-[12px] mb-[16px] font-bold flex  ">
                   <p>FILTERS</p>
                   <p className="text-[#5A6DD8]">CLEAR ALL</p>
@@ -92,13 +92,11 @@ const Home = () => {
             {/* w-[884px] overflow-x-auto */}
             <div className="w-full ">
 
-              <Link href={"/premium"}>
-                <button>Premium</button>
-              </Link>
+             
               
-              <div className="bg-white border sticky overflow-x-auto top-0 z-40">
+              <div className="bg-white   sticky top-[155px] md:top-[194px] lg:top-[260px] z-40">
                 {/* tabs */}
-                <div className="flex lg:pb-[40px] scroll-none gap-6 mt-[32px] overflow-x-auto bg-[white] hidden-scroll">
+                <div className="flex lg:pb-[22px]  scroll-none gap-6  overflow-x-auto bg-[white] ">
                   <TabNav className="group">
                     <CalendarStarBold
                       className=""
@@ -198,6 +196,9 @@ const Home = () => {
         <div className="sticky bottom-0 hidden md:block">
           <StickyFooter />
         </div>
+        {/* <Link href={"/premium"}>
+                <button>Premium</button>
+              </Link> */}
       </div>
     </>
   );

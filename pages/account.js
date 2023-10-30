@@ -11,6 +11,8 @@ import Switcher from "@/components/ui/switcher";
 import Header from "@/components/template/header";
 import JobPostCard from "@/components/template/jobPostCard";
 import React, { useState } from "react";
+import Footer2 from "@/components/template/footer2";
+import StickyFooter from "@/components/template/stickyFooter";
 
 const Account = () => {
   const jobpostId = "job";
@@ -140,7 +142,6 @@ const Account = () => {
             </div>
 
             {/* Settings */}
-
             <div className="w-full ">
               <div className="w-full ">
                 <div className="lg:hidden">
@@ -165,10 +166,10 @@ const Account = () => {
                 </div>
 
                 <div className="text-left mb-[16px] lg:mb-0 w-full">
-                  <h3 className=" text-[30px] xl:text-[32px] font-black uppercase  ">
+                  <h3 className=" text-[28px] sm:text-[30px] xl:text-[32px] font-black uppercase  ">
                     Settings
                   </h3>
-                  <p className="text-black text-[16px] mt-[16px]">
+                  <p className="text-black text-[14px] sm:text-[16px] mt-[16px]">
                     Change your basic account setting here.
                   </p>
                   <div className="flex justify-between items-center pb-[8px] border-b border-[black]">
@@ -187,7 +188,7 @@ const Account = () => {
                       <div className="w-full">
                         <Input
                           label="First Name"
-                          className="border border-dark mt-[8px] "
+                          className="border border-dark mt-[8px] text-[14px] sm:text-[16px] "
                           placeholder="First Name"
                           size="large"
                         />
@@ -195,7 +196,7 @@ const Account = () => {
                       <div className="w-full">
                         <Input
                           label="Last Name"
-                          className="border border-dark mt-[8px] "
+                          className="border border-dark mt-[8px] text-[14px] sm:text-[16px] "
                           placeholder="Last Name"
                           size="large"
                         />
@@ -205,7 +206,7 @@ const Account = () => {
                       <div className="w-full">
                         <Input
                           label="Email Address"
-                          className="border border-dark mt-[8px] "
+                          className="border border-dark mt-[8px] text-[14px] sm:text-[16px]  "
                           placeholder="companyname@mail.com"
                           size="large"
                         />
@@ -213,7 +214,7 @@ const Account = () => {
                       <div className="w-full">
                         <Input
                           label="Phone Number"
-                          className="border border-dark mt-[8px] "
+                          className="border border-dark mt-[8px] text-[14px] sm:text-[16px] "
                           placeholder="+1-613-555-0157"
                           size="large"
                         />
@@ -222,21 +223,21 @@ const Account = () => {
                   </div>
 
                   <div className="w-full">
-                    <p className="text-[#0E0D0D] text-[16px] font-bold pb-[16px] border-b border-[black]">
+                    <p className="text-[#0E0D0D] text-[14px] sm:text-[16px] font-bold pb-[16px] border-b border-[black]">
                       Change Password
                     </p>
-                    <button className=" w-full whitespace-nowrap mt-[24px]  mb-[48px] lg:w-[240px] h-[56px] border border-[#8390F5] rounded-[8px] text-[16px] text-[#0E0D0D] font-bold hover:text-[#8390F5]">
+                    <button className=" w-full whitespace-nowrap mt-[24px]  mb-[48px] lg:w-[240px] h-[56px] border border-[#8390F5] rounded-[8px]  text-[14px] sm:text-[16px] text-[#0E0D0D] font-bold hover:text-[#8390F5]">
                       CHANGE PASSWORD
                     </button>
-                    <p className="text-[#0E0D0D] text-[16px] font-bold pb-[16px] border-b border-[black]">
+                    <p className="text-[#0E0D0D] text-[14px] sm:text-[16px] font-bold pb-[16px] border-b border-[black]">
                       Notifications
                     </p>
                     <div className="flex justify-between items-center mt-[32px] pb-[32px] border-b border-[black]">
                       <div className="">
-                        <p className="text-[24px] mb-[16px] font-bold">
+                        <p className=" text-[16px] sm:text-[24px] mb-[16px] font-bold">
                           SYSTEM NOTIFICATIONS
                         </p>
-                        <p className="text-[#0E0D0D] text-[16px] font-normal">
+                        <p className="text-[#0E0D0D]  text-[12px] sm:text-[16px] font-normal">
                           Turn on or off all notifications about, favourites,
                           reviews, and updates.{" "}
                         </p>
@@ -249,10 +250,10 @@ const Account = () => {
                     </div>
                     <div className="flex justify-between items-center mt-[32px] pb-[32px] border-b border-[black]">
                       <div className="">
-                        <p className="text-[24px] mb-[16px] font-bold">
+                        <p className="text-[16px] sm:text-[24px]  mb-[16px] font-bold">
                           EMAIL NOTIFICATIONS
                         </p>
-                        <p className="text-[#0E0D0D] text-[16px] font-normal">
+                        <p className="text-[#0E0D0D]  text-[12px] sm:text-[16px] font-normal">
                           Turn on or off all marketing and promotional email
                           notifications from ESPO{" "}
                         </p>
@@ -263,7 +264,6 @@ const Account = () => {
                         onChange={() => setSwitcher3(!switcher3)}
                         variant="outlined"
                       />
-                      
                     </div>
                   </div>
                 </div>
@@ -271,10 +271,10 @@ const Account = () => {
             </div>
           </div>
         </div>
-        {/* <Footer2 />.
+        <Footer2 />
         <div className="sticky bottom-0 hidden md:block">
           <StickyFooter />
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -80,7 +80,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="font-bold font-slussen flex justify-between items-center h-[56px] md:h-[88px] border-t md:border-t-0 border-b border-dark">
+      <div className="font-bold sticky top-0 bg-[white] z-10 font-slussen flex justify-between items-center h-[56px] md:h-[88px] border-t md:border-t-0 border-b border-dark">
         <div className="flex justify-start items-center gap-x-10 pl-[16px] lg:pl-[48px]">
           <Image
             priority

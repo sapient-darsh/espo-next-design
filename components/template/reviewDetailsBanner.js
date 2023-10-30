@@ -20,13 +20,15 @@ const ReviewDetailsBanner = (props) => {
         <div className="flex mb-[16px] justify-between">
           <div>
             <p className="text-dark font-bold text-[14px] sm:text-[16px]">
-              {user}
+              {user} JOHN DOE
             </p>
-            <p className="text-dark text-[12px]">{userDescription}</p>
+            <p className="text-dark text-[12px]">
+              {userDescription} John worked with James John
+            </p>
           </div>
           <div className="flex  items-center">
             <p className="text-dark text-[14px] sm:text-[16px] font-normal mr-[8px]">
-              {rating}
+              {rating} 5.0
             </p>
             <div>
               <StarBold color="#E3A75A" />
@@ -40,17 +42,21 @@ const ReviewDetailsBanner = (props) => {
               viewMore ? "line-clamp-none" : "line-clamp-2"
             }  sm:line-clamp-none`}
           >
-            {description}
+            {description} Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore a magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliq.
           </p>
           <b
             onClick={() => setViewMore(!viewMore)}
             className=" text-accessiblePurple font-bold inline cursor-pointer sm:hidden"
           >
+           
             {viewMore ? "LESS" : "MORE"}
           </b>
         </div>
         <p className=" text-[14px] sm:text-[16px] text-[#6B6775] pb-[32px] border-b border-dark">
-          {date}
+          {date} 28th March 2023
         </p>
       </div>
     </div>

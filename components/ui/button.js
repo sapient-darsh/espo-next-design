@@ -12,7 +12,6 @@ const Button = (props) => {
     disabled,
     startIcon,
     endIcon,
-
     ...rest
   } = props;
 

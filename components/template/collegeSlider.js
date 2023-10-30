@@ -7,10 +7,10 @@ const CollegeSlider = (props) => {
 
   return (
     <>
-      <div className=" sm:flex items-center mb-4  bg-black-600 rounded-lg mt-[90px] w-[100%] ">
+      <div className=" sm:flex items-center mb-4  bg-black-600 rounded-lg  w-[100%] ">
         {loading ? (
           <>
-            <div className=" h-[240px] sm:h-[416px]  w-[358px] sm:w-[848px] rounded-lg animate-pulse bg-gray-300" />
+            <div className=" h-[240px] sm:h-[416px]  w-[358px] sm:w-[100%] rounded-lg animate-pulse bg-gray-300" />
             <div className="w-[358px]  sm:w-[153px]  h-[94px] sm:h-[416px] overflow-x-scroll   sm:overflow-y-scroll scroll-none ">
               <div className="bg-black-600 rounded-b-lg">
                 <ul className="list-none mt-[12px] sm:mt-[0px]  gap-4 sm:gap-0  w-[648px] sm:w-[100%]   hidden-scroll  flex flex-row sm:flex-col sm:px-4 md:px-6">
@@ -28,7 +28,7 @@ const CollegeSlider = (props) => {
           </>
         ) : (
           <>
-            <div className=" h-[240px] sm:h-[416px] w-[358px] sm:w-[848px] rounded-lg">
+            <div className=" h-[240px] sm:h-[416px] w-full sm:w-[848px] rounded-lg">
               <Image
                 width={848}
                 height={416}
@@ -38,7 +38,7 @@ const CollegeSlider = (props) => {
                 loading="lazy"
               />
             </div>
-            <div className=" w-[358px] sm:w-[153px]   h-[94px] sm:h-[416px] overflow-x-scroll  sm:overflow-y-scroll scroll-none">
+            <div className=" w-full sm:w-[153px]   h-[94px] sm:h-[416px] overflow-x-scroll  sm:overflow-y-scroll scroll-none">
               <div className=" rounded-b-lg ">
                 <ul className="list-none mt-[12px] sm:mt-[0px] gap-4 sm:gap-0   w-[648px] sm:w-[100%]   hidden-scroll flex flex-row sm:flex-col sm:px-4 md:px-6">
                   {images?.map((element, index) => (
@@ -49,7 +49,7 @@ const CollegeSlider = (props) => {
                       <Image
                         priority
                         src={element}
-                        width={80}
+                        width={100}
                         height={64}
                         className={`rounded-lg cursor-pointer  h-[64px]  ${
                           selectedIndex === index

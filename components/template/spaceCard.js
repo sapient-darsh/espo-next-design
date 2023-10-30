@@ -10,33 +10,33 @@ const SpaceCard = (props) => {
   return (
     <div className="font-slussen text-left">
       <p className="text-dark text-[16px] sm:text-[20px] font-bold mb-[12px]">
-        {title}
+        {title} NAME OF THE SPACE IN THE HOTEL
       </p>
 
       <div className="flex gap-4 mb-[12px]">
         <div className="flex items-center">
           <div>
-            <CubeBold color="#4FBB92" />
+            <CubeBold color="#4FBB92" /> 
           </div>
-          <p className="ml-[8px] text-[14px] sm:text-[16px]">{type}</p>
+          <p className="ml-[8px] text-[14px] sm:text-[16px]">{type} Small</p>
         </div>
         <div className="flex items-center">
           <div>
             <SquareBold color="#4FBB92" />
           </div>
-          <p className="ml-[8px] text-[14px] sm:text-[16px]">{size}</p>
+          <p className="ml-[8px] text-[14px] sm:text-[16px]">{size} 80m2</p>
         </div>
         <div className="flex items-center">
           <div>
             <UsersBold color="#4FBB92" />
           </div>
-          <p className="ml-[8px] text-[14px] sm:text-[16px]">{seatCapacity}</p>
+          <p className="ml-[8px] text-[14px] sm:text-[16px]">{seatCapacity} 60</p>
         </div>
         <div className="flex items-center">
           <div>
             <ChairBold color="#4FBB92" />
           </div>
-          <p className="ml-[8px] text-[14px] sm:text-[16px]">{standCapacity}</p>
+          <p className="ml-[8px] text-[14px] sm:text-[16px]">{standCapacity} 25</p>
         </div>
       </div>
       <div className="mb-[24px]">
@@ -45,7 +45,7 @@ const SpaceCard = (props) => {
             viewMore ? "line-clamp-none" : "line-clamp-2"
           }  sm:line-clamp-none`}
         >
-          {description}
+          {description} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.
         </p>
         <b
           onClick={() => setViewMore(!viewMore)}

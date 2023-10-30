@@ -8,7 +8,7 @@ const ReviewBanner = (props) => {
     <div className="font-slussen flex sm:flex-row flex-col justify-between border border-[black] rounded-lg p-[16px] sm:p-[37px] items-center">
       <div className="mb-[20px] sm:mb-0 text-left w-full">
         <p className=" text-[14px] sm:text-[24px] font-bold mb-[16px]">
-          {title}
+          {title} READY TO SHARE THOUGHTS?
         </p>
         <div className="flex">
           <div className="flex mr-[24px] items-center">
@@ -16,7 +16,7 @@ const ReviewBanner = (props) => {
               <StarBold color="#E3A75A" />
             </div>
             <p className="text-dark text-[14px] sm:text-[16px] font-normal">
-              {rating}
+              {rating}  5.0
             </p>
           </div>
           <div className="flex items-center">
