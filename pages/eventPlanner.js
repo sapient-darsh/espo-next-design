@@ -16,6 +16,7 @@ import SpaceCard from "@/components/template/spaceCard";
 import IconButton from "@/components/ui/iconButton";
 import PlusLinear from "@/components/assets/svg/plusLinear";
 import Image from "next/image";
+import EventPlannerspacecard from "@/components/template/eventPlannerspacecard";
 
 const tagsData = [
   { label: "GENERAL LABOURER" },
@@ -70,18 +71,18 @@ const EventPlanner = (props) => {
             <p className="text-[14px] font-bold">BACK</p>
           </div>
         </div>
-        <div className="flex justify-between w-full gap-[40px]">
-          <div className="w-[509px] h-[360px] rounded-lg">
+        <div className="flex md:flex-row flex-col justify-between w-full gap-[40px]">
+          <div className=" border w-full md:w-[280px] h-[240px] md:h-[360px] rounded-lg">
             <Image
-              className="border rounded-lg  object-contain"
+              className=" rounded-lg  object-contain w-full h-[240px] md:w-[280px]"
               alt=""
-              src={`https://healcap-bucket.s3.ap-south-1.amazonaws.com/content/images/gallery/81710041263447758369.pexels-photo-262047.jpeg`}
+              src={""}
               width={280}
               height={360}
             />
           </div>
-          <div>
-            <p className="mt-[32px] text-[24px] md:text-[40px] mb-[24px] font-bold">
+          <div className="w-[100%]">
+            <p className=" text-[24px] md:text-[40px] mb-[24px] font-bold">
               Cameron Williamson{" "}
             </p>
             <div className="flex justify-between">
@@ -120,7 +121,7 @@ const EventPlanner = (props) => {
                   <div className="rounded-lg w-[56px]  border border-dark p-[15px]">
                     <PhoneBold color="#4BA0D7" />
                   </div>
-                  <div className="text-left w-full  md:w-[130px] lg:w-[243px]   ">
+                  <div className="text-left w-[163px] lg:w-[243px]   ">
                     <p className=" text-[14px] md:text-[16px] text-dark font-semibold mb-[4px]">
                       Manager{" "}
                     </p>
@@ -135,7 +136,7 @@ const EventPlanner = (props) => {
                   <div className="rounded-lg w-[56px]  border border-dark p-[15px]">
                     <PhoneBold color="#4BA0D7" />
                   </div>
-                  <div className="text-left w-full p md:w-[130px] lg:w-[243px] ">
+                  <div className="text-left  w-[163px] lg:w-[243px] ">
                     <p className=" text-[14px] md:text-[16px] text-dark font-semibold mb-[4px]">
                       Phone Number
                     </p>
@@ -150,7 +151,7 @@ const EventPlanner = (props) => {
                   <div className="rounded-lg w-[56px]  border border-dark p-[15px]">
                     <MailBold color="#4BA0D7" />
                   </div>
-                  <div className="text-left w-full  md:w-[130px] lg:w-[243px]] ">
+                  <div className="text-left w-[163px] lg:w-[243px] ">
                     <p className=" text-[14px] md:text-[16px] text-dark font-semibold mb-[4px]">
                       Email Address{" "}
                     </p>
@@ -165,7 +166,7 @@ const EventPlanner = (props) => {
                   <div className="rounded-lg w-[56px]  border border-dark p-[15px]">
                     <LocationBold color="#4BA0D7" />
                   </div>
-                  <div className="text-left w-full  md:w-[130px] lg:w-[243px] ">
+                  <div className="text-left  w-[163px] lg:w-[243px] ">
                     <p className=" text-[14px] md:text-[16px] text-dark font-semibold mb-[4px]">
                       Location{" "}
                     </p>
@@ -209,7 +210,7 @@ const EventPlanner = (props) => {
           })}
         </div>
 
-        <div className="flex border-b border-black justify-between ">
+        <div className="flex items-center border-b border-black justify-between ">
           <p className="text-[14px] md:text-[16px] font-bold text-[#0E0D0D] pb-[16px] ">
             Experience
           </p>
@@ -221,10 +222,10 @@ const EventPlanner = (props) => {
         </div>
 
         <div className="my-[32px] border-b border-black">
-          <SpaceCard />
+          <EventPlannerspacecard/>
         </div>
         <div className="my-[32px] border-b border-black">
-          <SpaceCard />
+          <EventPlannerspacecard />
         </div>
         <div className="mb-[32px]">
           <ReviewBanner />

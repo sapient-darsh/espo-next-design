@@ -22,7 +22,7 @@ const PlannerBanner = (props) => {
             </div>
             <div className="text-left">
               <p className="mp text-[16px] text-dark font-semibold mb-[4px]">
-                {plannerName}
+                {plannerName} Brooklyn Simmons
               </p>
               <p className=" text-[12px] text-dark font-normal">
                 Event Planner
@@ -30,7 +30,7 @@ const PlannerBanner = (props) => {
             </div>
           </div>
           <div className="flex">
-            <p className="text-dark text-[16px] font-normal">{rating}</p>
+            <p className="text-dark text-[16px] font-normal">{rating} 5.0</p>
             <div className="ml-[10px]">
               <StarBold color="#E3A75A" />
             </div>
@@ -45,7 +45,7 @@ const PlannerBanner = (props) => {
                 Phone Number
               </p>
               <p className=" text-[12px] text-dark font-normal">
-                {phoneNumber}
+                {phoneNumber} +1-613-555-0157
               </p>
             </div>
             <div className="rounded-lg w-[56px]  border border-dark p-[15px]">
@@ -59,7 +59,9 @@ const PlannerBanner = (props) => {
               <p className="text-[14px] md:text-[16px] text-dark font-semibold  mb-[4px]">
                 Email Address
               </p>
-              <p className=" text-[12px] text-dark font-normal">{email}</p>
+              <p className=" text-[12px] text-dark font-normal">
+                {email}companyname@mail.com{" "}
+              </p>
             </div>
             <div className="rounded-lg w-[56px] border border-dark p-[15px]">
               <MailBold color="#4BA0D7" />

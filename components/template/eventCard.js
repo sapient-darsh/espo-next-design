@@ -21,9 +21,9 @@ const EventCard = (props) => {
             </div>
             <div className="text-left">
               <p className="mp abctext-[16px] text-dark font-semibold mb-[4px] ">
-                {eventName}
+                {eventName} Health and Harmony Expo
               </p>
-              <p className="  text-[12px] text-dark font-normal">{location}</p>
+              <p className="  text-[12px] text-dark font-normal">{location} Las Vegas, NV, USA</p>
             </div>
           </div>
         </div>
@@ -36,15 +36,14 @@ const EventCard = (props) => {
                 </button>
                 <div className="text-left ">
                   <p className="text-dark text-[14px] font-semibold">Date</p>
-                  <p className="text-dark text-[12px] font-normal">{date}</p>
+                  <p className="text-dark text-[12px] font-normal">{date} </p>
                 </div>
               </div>
             </div>
           </div>
-
           <div className=" hb  mr-[24px]">
             <div className="flex ">
-              <p className="text-dark text-[16px] font-normal">{date}</p>
+              <p className="text-dark text-[16px] font-normal">{date} 14th March 2023</p>
               <div className="ml-[8px] ">
                 <CalenderBold color="#4FBB92" />
               </div>

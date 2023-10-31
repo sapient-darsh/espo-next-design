@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <>
-      <Header  />
+      <Header />
       <div className="">
         <div className=" px-[16px] lg:px-[48px]">
           <div className="text-[#0E0D0D] bg-[white] z-10 text-[28px] lg:text-[48px] sticky top-[56px] md:top-[88px]  pt-[32px] lg:pt-[48px] font-black  pb-[34px] lg:pb-[52px]">
@@ -91,9 +91,6 @@ const Home = () => {
 
             {/* w-[884px] overflow-x-auto */}
             <div className="w-full ">
-
-             
-              
               <div className="bg-white   sticky top-[155px] md:top-[194px] lg:top-[260px] z-40">
                 {/* tabs */}
                 <div className="flex lg:pb-[22px]  scroll-none gap-6  overflow-x-auto bg-[white] ">
