@@ -5,9 +5,12 @@ const ImageEditor = () => {
   const [scriptFlag, setScriptFlag] = useState(false);
 
   const loadLibraryScript = () => {
-    libraryScriptRef.current = document.createElement("script");
-    libraryScriptRef.current.src = "/assets/imageCrop.js";
-    document.body.appendChild(libraryScriptRef.current);
+    if (!document.getElementById("imageCrop")?.id) {
+      libraryScriptRef.current = document.createElement("script");
+      libraryScriptRef.current.src = "/assets/imageCrop.js";
+      libraryScriptRef.current.id = "imageCrop";
+      document.body.appendChild(libraryScriptRef.current);
+    }
   };
 
   useEffect(() => {

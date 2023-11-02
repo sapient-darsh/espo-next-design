@@ -1,3 +1,17 @@
+:root {
+  --color-1: rgb(240, 240, 240);
+  --color-2: rgb(220, 220, 220);
+  --color-3: rgb(200, 200, 200);
+  --color-4: rgb(180, 180, 180);
+  --color-success: rgb(140, 240, 140);
+  --color-warning: rgb(240, 140, 140);
+  --color-text: rgb(45, 49, 49);
+  --color-shadow: rgba(50, 50, 50, 0.5);
+  --color-crop-thumb: rgb(255, 243, 70);
+  --color-slider-track: var(--color-4);
+  --color-slider-thumb: rgb(250, 150, 150);
+}
+
 .button-editor {
   display: flex;
   justify-content: center;

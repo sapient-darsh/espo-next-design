@@ -503,6 +503,7 @@ class Cropper {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  let cropper = new Cropper({});
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   new Cropper({});
+// });
+new Cropper({});

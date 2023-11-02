@@ -16,12 +16,16 @@ module.exports = {
         "2xl": "1536px",
       },
       colors: {
+        espoHover: "#7282F4",
         purple: "#8390F5",
         purpleAlpha: "#8390F520",
         accessiblePurple: "#5A6DD8",
         accentRed: "#CF5F5F",
         bgGray: "#F3F3F3",
         dark: "#0E0D0D",
+        accentGreen: "#4FBB92",
+        accentBlue: "#4BA0D7",
+        darkGray: "#ECECEC",
       },
       fontFamily: {
         slussenExtended: ["Slussen Extended"],
