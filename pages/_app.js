@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
+import "@/styles/imageEditor.css";
 import { useRouter } from "next/router";
-
 
 export default function App({ Component, pageProps }) {
   // const router = useRouter();
@@ -25,7 +25,6 @@ export default function App({ Component, pageProps }) {
   return (
     <main className="font-slussenExtended">
       <Component {...pageProps} />
-      
     </main>
   );
 }
