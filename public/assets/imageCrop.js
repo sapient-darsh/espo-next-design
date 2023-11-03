@@ -110,6 +110,7 @@ class Cropper {
       this.options.imgSrc = ev.target.result;
       this.cropper = this.cropbox(this.options);
       // init cropper zoom with value set on input
+      console.log("this.zoomSlider.value", this.zoomSlider.value);
       this.cropper.zoom(this.zoomSlider.value);
 
       // emit the submitImageToCrop event
@@ -275,7 +276,6 @@ class Cropper {
           setBackground();
         },
         zoom: function (value) {
-          // value: [-20, 20]
           this.ratio = 1 + value / 20;
           setBackground();
         },
