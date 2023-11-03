@@ -288,7 +288,7 @@ class Cropper {
         if (node.detachEvent) {
           node.detachEvent("on" + event, cb);
         } else if (node.removeEventListener) {
-          node.removeEventListener(event, render);
+          node.removeEventListener(event);
         }
       },
       stopEvent = function (e) {
